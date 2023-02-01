@@ -1,0 +1,22 @@
+header {
+    font-family: Impact, fantasy;
+    text-align: center;
+    line-height: .5em;
+    padding: 1em;
+    background-color: ;
+    color: ;
+}
+
+main {
+   font-family: American Typewriter, serif; 
+   padding: 0em 1em;
+   text-align: left;
+}
+
+footer {  
+
+    padding: 0em 1em;
+}
+.indent { 
+    text-indent: 2em;
+}
