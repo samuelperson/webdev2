@@ -2,17 +2,30 @@ header {
     font-family: Impact, fantasy;
   /*something is wrong with the header, it folds on top of itself while making the viewfinder smaller. Set the min-width and come back to this */
     text-align: center;
-    line-height: .5em;
-    min-width: 40px;
+    min-width: 1024px;
     padding: 1em;
     background-color: #C4A484;
     color: #2A1B0E ;
     margin: 1em .5em;
+
 }
 
+h1 {
+    line-height: 1.5em;
+    min-width: 1024px;
+}
+h2 {
+    line-height: .5em;
+    min-width: 1024px;
+}
+
+h3 {
+    line-height: .5em;
+    min-width: 1024px;
+}
 main {
    font-family: American Typewriter, serif; 
-   min-width: 40px;
+   min-width: 1024px;
    padding: .2em 1em;
    text-align: left;
    background-color: #F4CBA2;
@@ -26,8 +39,17 @@ footer {
     padding: 0em 1em;
     background-color: #F4CBA2;
     color: #2A1B0E ;
-    min-width: 40px;
+    min-width: 1024px;
+}
+
+body {
+    background-color: #DFD7D1;
+    min-width: 1024px;
+   
+
 }
 .indent { 
     text-indent: 2em;
+    min-width: 1024px;
+    
 }
