@@ -1,0 +1,51 @@
+/*
+nav ul {
+    list-style: none;
+    padding-left: 0px; 
+
+
+}
+
+nav {
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+
+
+}
+
+main {
+    width: 65%;
+    float: right;
+    border: 1px solid black;
+    
+}
+
+footer {
+    clear: both;
+}
+
+- this is an old school way, next is flexbox
+*/ 
+
+#two-column {
+    display: flex;
+}
+
+nav, main {
+    border: 1px solid black;
+}
+
+nav {
+    flex: 0.75;
+}
+
+main {
+    flex: 2.5;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    
+}
