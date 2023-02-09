@@ -32,6 +32,11 @@ footer {
     display: flex;
 }
 
+#container {
+    width: 80%;
+    margin: auto;
+    
+}
 nav, main {
     border: 1px solid black;
 }
@@ -40,12 +45,47 @@ nav {
     flex: 0.75;
 }
 
+a {
+
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    background: magenta; 
+    color: white; 
+    text-align: center; 
+    padding: 6px;
+    margin-bottom: 3px; 
+
+}
+/*change colors and style when figure out style */
+
+nav a:hover {
+    background: black; 
+}
+/*change colors and style when figure out style */
+
 main {
     flex: 2.5;
 }
-
-#container {
-    width: 80%;
-    margin: auto;
-    
+ /* wait until you create the pictures and put them in; erase when picturs are added 
+figure {
+    margin: 0px;
 }
+
+figure-img {
+    width: 100%;
+}
+
+body {
+    background: green url() fixed no-repeat center;
+    background-size: cover;
+}
+
+header h1 {
+    color: white;
+    font-size: 5vw; 
+    font-family: 'Rubik Vinyl', cursive;
+}
+/*
