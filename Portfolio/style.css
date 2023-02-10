@@ -41,22 +41,31 @@ nav, main {
     border: 1px solid black;
 }
 
+
 nav {
     flex: 0.75;
 }
 
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*
 a {
 
 }
+*/
 
 nav a {
     text-decoration: none;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
     display: block;
-    background: magenta; 
+    background: #2f1281; 
     color: white; 
     text-align: center; 
     padding: 6px;
-    margin-bottom: 3px; 
+    margin-bottom: 5px; 
 
 }
 /*change colors and style when figure out style */
@@ -69,23 +78,50 @@ nav a:hover {
 main {
     flex: 2.5;
 }
- /* wait until you create the pictures and put them in; erase when picturs are added 
-figure {
-    margin: 0px;
+
+main h1 {
+    color: white; 
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    padding: 6px;
+    text-align: center; 
+    font-size: 5vw; 
+
 }
 
-figure-img {
+main p {
+    color: white; 
+    padding: 6px;
+    text-align: center; 
+    font-size: 2.5vw; 
+    font-family: 'Special Elite', cursive;
+}
+
+footer {
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+figure {
+    margin:0px;
+}
+
+figure img {
     width: 100%;
 }
 
 body {
-    background: green url() fixed no-repeat center;
+    background: black url(img/background-website.jpg) fixed no-repeat center;
     background-size: cover;
 }
 
 header h1 {
     color: white;
     font-size: 5vw; 
-    font-family: 'Rubik Vinyl', cursive;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
 }
-/*
+
+header h2 {
+    color: white;
+    font-size: 3.5vw; 
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+}
