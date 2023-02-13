@@ -1,0 +1,78 @@
+/* Mobile CSS- what is necessary in phone view */
+
+body {
+
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+nav section {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+figure {
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;
+}
+
+.mobile {
+    background: yellow;
+}
+
+.desktop {
+    display: none;
+}
+/* media queries */
+
+/* minimum width of laptops- this causes the screen to change to mobile view */
+@media all and (min-width: 769px) {
+
+    #container {
+        width: 80%;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+
+    /*nav {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav section {
+        flex: 0 1 48%;
+    }
+    */
+
+    nav {
+        display: grid; 
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+
+   /* nav section {
+        flex: 0 1 32%;
+    }
+   */
+
+   nav {
+    grid-template-columns: repeat(3,1fr);
+   }
+}
