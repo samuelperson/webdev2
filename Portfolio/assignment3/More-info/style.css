@@ -1,0 +1,107 @@
+
+body {
+    background-color: teal;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   
+   #container {
+       width: 90%;
+       margin: auto;
+   }
+   
+   #two-column {
+    display: flex;
+}
+
+   section p {
+    margin: 0px;
+    padding: 0px;
+   }
+   
+   section header {
+    margin: 0px;
+    padding: 0px;
+   }
+   section {
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;  
+    flex: 0.50;
+    line-height: 30px;
+    padding: 15px;
+}
+
+aside {
+    flex: 2.5;
+}
+aside h1 {
+    color: white; 
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    padding: 6px;
+    text-align: center; 
+    font-size: 5vw; 
+    line-height: 6px;
+
+}
+
+aside p {
+    color: white; 
+    padding: 6px;
+    text-align: center; 
+    font-size: 2.5vw;
+}
+footer {
+    margin: 30px;
+   }
+   
+   .mobile {
+    background: aliceblue;
+    
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:15px;
+    border: 5px solid brown;
+}
+
+.desktop {
+    display: none;
+}
+
+@media all and (min-width: 769px) {
+
+    #container {
+        width: 80%;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+        background-color: aliceblue;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom:15px;
+        border: 5px solid brown;
+    }
+
+    nav {
+        display: grid; 
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+
+}
+
+@media all and (min-width: 1024px) {
+
+   nav {
+    grid-template-columns: repeat(3,1fr);
+   }
+
+}

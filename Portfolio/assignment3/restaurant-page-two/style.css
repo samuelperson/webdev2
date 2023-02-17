@@ -1,0 +1,143 @@
+/* Mobile CSS- what is necessary in phone view */
+
+body {
+    background-color: teal;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+
+
+
+nav {
+    flex: 0.75;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav section {
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 25px;
+   
+}
+
+nav a {
+    text-decoration: none; 
+    display: block;
+    background: white; 
+    color: black; 
+    text-align: center; 
+    padding: 6px;
+    margin-bottom: 5px; 
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+nav a:hover {
+    background: black; 
+    color: teal;
+}
+
+   #container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+section p {
+    margin: 15px;
+}
+
+section header {
+    line-height: 6px;
+
+}
+article section {
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+
+main {
+    flex: 2.5;
+}
+figure {
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;
+   border-radius: 25px;
+}
+
+footer {
+    margin: 30px;
+   }
+.mobile {
+    background: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 25px;
+}
+.desktop {
+    display: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:15px;
+    padding: 10px;
+    
+}
+/* media queries */
+
+/* minimum width of laptops- this causes the screen to change to mobile view */
+@media all and (min-width: 769px) {
+
+    #container {
+        width: 80%;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+
+    /*nav {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav section {
+        flex: 0 1 48%;
+    }
+    */
+
+
+
+}
+
+@media all and (min-width: 1024px) {
+
+   /* nav section {
+        flex: 0 1 32%;
+    }
+   */
+
+
+}
