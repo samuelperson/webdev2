@@ -1,0 +1,28 @@
+#container {
+    width: 80%;
+    margin: auto;
+    
+}
+
+body {
+    background-color: blueviolet;
+}
+figure {
+    margin:0px;
+}
+
+figure img {
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-size: 5vw; 
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+}
+
+header h2 {
+    color: white;
+    font-size: 3.5vw; 
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+}
