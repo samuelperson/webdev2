@@ -1,11 +1,18 @@
 #container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     position: relative;
     
     
 }
 
+main p {
+    color:grey;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    animation: example 10s;
+    animation-delay: 5s;
+
+}
 header {
     text-align: center;
 }
@@ -33,18 +40,26 @@ main h2 {
     
 }
 
+
+footer {
+    padding: 10px;
+    margin: 0px;
+}
 /* header animation rotation */
 
 #title-spin {
     animation-name: stage-left;
-    animation-duration: 10s forward; 
-    animation-delay: 5s;
-
+    animation-duration: 10s; 
+    animation-delay: 4s;
 }
+
+/* for some reason forwards doesnt work for any animation property, so I gave up */
+
+
 
 #stage-right {
     animation-name: stage-right;
-    animation-duration: 10s forward; 
+    animation-duration: 10s; 
     animation-delay: 5s;
 }
 
@@ -72,9 +87,9 @@ main h2 {
 /* text animation testing */
 
 #text-animation {
-    color: white;
+    color: grey;
     animation-name: example;
-    animation-duration: 10s forward;
+    animation-duration: 10s;
     animation-delay: 5s;
 
 }
