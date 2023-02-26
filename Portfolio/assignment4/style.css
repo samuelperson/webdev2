@@ -1,11 +1,17 @@
 #container {
-    width: 80%;
+    width: 60%;
     margin: auto;
+    position: relative;
+    
     
 }
 
+header {
+    text-align: center;
+}
+
 body {
-    background-color: blueviolet;
+    background-color: grey;
 }
 figure {
     margin:0px;
@@ -13,16 +19,118 @@ figure {
 
 figure img {
     width: 100%;
+    margin: 0px;
+
 }
 
-header h1 {
-    color: white;
-    font-size: 5vw; 
-    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+main {
+    text-align: center; 
 }
-
-header h2 {
-    color: white;
+main h2 {
+    color: grey;
     font-size: 3.5vw; 
     font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    
 }
+
+/* header animation rotation */
+
+#title-spin {
+    animation-name: stage-left;
+    animation-duration: 10s forward; 
+    animation-delay: 5s;
+
+}
+
+#stage-right {
+    animation-name: stage-right;
+    animation-duration: 10s forward; 
+    animation-delay: 5s;
+}
+
+@keyframes stage-right {
+    0% {
+        transform: translate(0px,0px);
+    }
+
+        
+    100% {
+        transform: translate(-4000px,0px);
+    }
+}
+
+@keyframes stage-left{
+    0% {
+        transform: translate(0px,0px);
+    }
+
+        
+    100% {
+        transform: translate(4000px,0px);
+    }
+}
+/* text animation testing */
+
+#text-animation {
+    color: white;
+    animation-name: example;
+    animation-duration: 10s forward;
+    animation-delay: 5s;
+
+}
+@keyframes example {
+    0% {color: grey;}
+    100% {color: white;}
+  }
+
+/* this is all button work, trying to experiment*/
+
+#button-runaway {
+    display:inline-block;
+    transform: translate(0px 0px);
+    margin: 30px 20px;
+}
+
+#button-runaway:hover {
+    transform: translate(4000px,0px);
+    transition: all 10s;
+    margin:30px 20px;
+
+}
+button {
+    background-color: blue;
+    color: white;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    border: 0px;
+    padding: 10px 15px;
+    transform: translate(0px 0px)
+}
+button:hover {
+    background-color: blue;
+    color: white;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    border: 0px;
+    padding:10px 15px;
+    transform: translate(4000px,0px);
+    transition: all 10s;
+}
+button .comment {
+    display: none;
+    background: blue;
+    color: white;
+    font-family: 'Rubik Vinyl', Impact, sans-serif; 
+    border: 0px;
+    padding:10px 15px;
+    transform: translate(2500px,0px);
+    transition: all 10s;
+  }
+  
+  button:hover .replies {
+    display: none;
+  }
+  
+  button:hover .comment {
+    display: inline;
+  }
+
+  /*end of button code*/
