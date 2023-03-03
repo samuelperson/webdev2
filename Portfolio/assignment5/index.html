@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Secret website</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Welcome to a super boring website</h1>
+       
+    </header>
+
+    <main>
+        <button class="what">what is this?</button>
+        <button id="Spice">Spice it up!</button>
+        <button id="cat">See a cute cat!</button>
+        <p class="hidden">This is a super boring and bare website that is meant to intrigue those that have little to no creativity or uniqueness.</p>
+
+       <p class="hidden"> If you are not one of these people, hit the "spice it up" button for a better experience.</p> 
+
+    <div id=orientation>
+       <img class="hidden" src="img/IMG_3724.jpg" alt="Cute cat">
+    </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (){
+        $(".hidden").hide();
+
+        $("#cat").click(function(){
+
+            $("img.hidden").slideToggle();
+
+        }); //close cat.click()
+
+        $(".what").click(function(){
+            $("p.hidden").slideToggle();
+        }); //close .click()
+
+        $("#Spice").click(function(){
+            $("body").addClass("Style");
+
+            $("p").addClass("fun")
+
+            $("h1").addClass("fun")
+
+        }); //close spice.click()
+
+    }); //close .ready()
+</script>
+
+
+</body>
+</html>
