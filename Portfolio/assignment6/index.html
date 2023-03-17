@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scrolling with Jquery</title>
+</head>
+<body>
+    <div id="container">
+        <header id="one">
+            <h1>Operation Ink </h1>
+        </header>
+
+        <main>
+
+            <div id="OP1">
+                <h1>Hello!</h1>
+            </div>
+
+            <section id="two">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque id reprehenderit voluptas officia odio culpa dignissimos minima consectetur aut, eum dolorum atque unde, consequatur debitis reiciendis, eaque perspiciatis porro!</p>
+            </section>
+
+            <div id="OP2">
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quas animi. Eos ducimus, velit saepe consectetur reiciendis iste sint natus impedit mollitia architecto fuga possimus perspiciatis minus, praesentium veniam optio?
+                    </p>
+                </section>
+            </div>
+
+            <section id="three">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nostrum id magnam vel quos veritatis, tempora, repellat, excepturi neque sint quo ea sapiente autem amet harum? Esse autem consequuntur quidem.</p>
+            </section>
+
+            <div id="OP3">
+                <section>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nostrum id magnam vel quos veritatis, tempora, repellat, excepturi neque sint quo ea sapiente autem amet harum? Esse autem consequuntur quidem.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+        <footer>
+        </footer>
+   
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+            $(window).scroll(function() {
+
+                var windowPosition = $(window).scrollTop();
+
+                //detect position of particular element to trigger a function
+	            var elementOffset = $('#one').offset().top;
+	            var currentElementOffset = (elementOffset - windowPosition);
+	
+	            if (currentElementOffset<10) {
+		            $('#OP1 h1').fadeOut();
+	            } else {
+		            $('#OP1 h1').fadeIn();
+	            }//close if/else statement
+
+                var elementOffset = $('#two').offset().top;
+                var currentElementOffset = (elementOffset - windowPosition);
+
+                if (currentElementOffset<40) {
+		            $('#OP2 section').fadeIn();
+	            } else {
+		            $('#OP2 section').fadeOut();
+                }
+
+               var elementOffset = $('#three').offset().top;
+               var currentElementOffset = (elementOffset - windowPosition);
+
+                if (currentElementOffset<40) {
+		          $('#OP3 section').fadeIn();
+	           } else {
+		          $('#OP3 section').fadeOut();
+              }
+
+
+
+            
+            });
+
+
+            }); //close document function
+        </script>
+
+</body>
+</html>

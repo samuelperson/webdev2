@@ -1,0 +1,107 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	
+}
+
+
+#container {
+	height: 100%;
+}
+
+
+header, section {
+	background:black;
+	padding:25px;
+	color:yellow;
+}
+
+
+
+
+
+#OP1, #OP2, #OP3 {
+    height:700px;
+    /* the height percentage in the container doesnt work- ask in class*/
+	
+}
+
+
+#OP1 {
+	background:url('img/background-website.jpg') fixed center no-repeat;
+	background-size:cover;
+
+    position:relative;
+}
+
+#OP2 {
+	background:url('img/Desktop-background-redo.jpg') fixed center no-repeat;
+	background-size:cover;
+	
+	position:relative;
+}
+
+#OP3 {
+	background:url('img/silvoni-brothers-redo2.jpg') fixed center no-repeat;
+	background-size:cover;
+
+    position:relative;
+}
+
+
+
+
+
+
+#OP1 h1 {
+	color:white;
+	font-size:140px;
+	line-height:140px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-182px;
+	margin-top:-70px;
+}
+
+#OP2 section {
+    color:white;
+	font-size:40px;
+	line-height:40px;
+	position:absolute;
+    text-align: center;
+	left: 30%;
+	top: 30%;
+	margin-left:-300px;
+    margin-right: 70px;
+	margin: top -97.5px;
+}
+
+
+
+#OP3 section {
+    color:white;
+	font-size:40px;
+	line-height:40px;
+	position:absolute;
+    text-align: center;
+	left: 30%;
+	top: 20%;
+	margin-left:-300px;
+    margin-right: 70px;
+	margin: top -97.5px;
+}
