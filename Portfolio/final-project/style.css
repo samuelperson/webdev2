@@ -1,0 +1,59 @@
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background: black url(background-img/Collage-Background.png) fixed no-repeat center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+
+    /* may get mad since it is a PNG, keep in mind*/
+}
+
+@font-face {
+    font-family: "vtks-study";
+    src: url(fonts/vtks-study/vtks_study.ttf);
+}
+
+.vtks_font{
+    font-family: vtks-study;
+}
+
+button {
+    background-color: transparent;
+    color: black;
+    border: 0em;
+    font-size: 1.25em;
+    position: absolute;
+    right: 5px;
+    bottom: 3em;
+    
+}
+
+button:hover {
+    color: purple;
+}
+
+
+
+section {
+    margin: 0px;
+    background-color: black;
+    max-height: 150px;
+    max-width: 100px;
+    display: flex;
+   justify-content: center;
+}
+    
+    
+
+img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
