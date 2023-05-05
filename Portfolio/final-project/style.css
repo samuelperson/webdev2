@@ -36,24 +36,22 @@ button:hover {
     color: purple;
 }
 
-
-
-section {
-    margin: 0px;
-    background-color: black;
-    max-height: 150px;
-    max-width: 100px;
-    display: flex;
-   justify-content: center;
-}
-    
-    
-
-img {
-    width: 100%;
-    display: flex;
+nav {
+    display:flex; 
     justify-content: center;
     
-    
+ 
+}
 
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav img{
+   max-height: 150px;
+   margin: 0px;
+    padding: 0px;
+
+
+    
 }

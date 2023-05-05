@@ -1,0 +1,16 @@
+body {
+    background: black url(../background-img/Creative-background-1.png) fixed no-repeat center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap: 15px;
+}
+
+section p {
+    background-color: white;
+}
