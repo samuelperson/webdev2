@@ -19,6 +19,8 @@ body {
 
 .vtks_font{
     font-family: vtks-study;
+    max-height: 10px;
+    max-width: 10px;
 }
 
 button {
@@ -37,8 +39,8 @@ button:hover {
 }
 
 nav {
-    display:flex; 
-    justify-content: center;
+    position: relative;
+    
     
  
 }
@@ -48,18 +50,102 @@ nav ul {
     text-align: center;
 }
 nav img{
-   max-height: 150px;
-   margin: 0px;
-   padding: 0px;  
+    position: absolute;
+    max-height: 140px;
 }
 
+#decora-kei {
+    transform: translate(-55px, 80px);
+}
 
+#mori-kei {
+    max-height: 110px;
+    transform: translate(-70px, 30px);
+}
+
+#Lolita {
+    max-height: 80px;
+    transform: translate(-70px, -23px);
+}
+
+#visual-kei {
+    max-height: 40px;
+    transform: translate(-46px, -50px);
+}
 
 @media all and (min-width: 769px) {
+    #container {
+        width: 80%;
+    }
+    nav {
+        position: relative;
+    }
     
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    nav img{
+        position: absolute;
+        max-height:230px;
+    }
+    
+    #decora-kei {
+        transform: translate(-85px, 170px);
+    }
+    
+    #mori-kei {
+        max-height: 160px;
+        transform: translate(-90px, 95px);
+    }
+    
+    #Lolita {
+        max-height: 130px;
+        transform: translate(-100px, 3px);
+    }
+    
+    #visual-kei {
+        max-height: 70px;
+        transform: translate(-67px, -45px);
+    }
 }
-
+ 
 @media all and (min-width: 1024px) {
-
+    nav {
+        position: relative;
+        
+        
+     
+    }
+    
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    nav img{
+        position: absolute;
+        max-height: 400px;
+    }
+    
+    #decora-kei {
+        transform: translate(-125px, 300px);
+    }
+    
+    #mori-kei {
+        max-height: 300px;
+        transform: translate(-155px, 150px);
+    }
+    
+    #Lolita {
+        max-height: 210px;
+        transform: translate(-145px, 13px);
+    }
+    
+    #visual-kei {
+        max-height: 110px;
+        transform: translate(-96px, -70px);
+    }
 }
+
+
 
