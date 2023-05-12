@@ -2,7 +2,12 @@ body {
     background: black url(../background-img/Creative-background-1.png) fixed no-repeat center;
     background-size: cover;
     height: 100%;
-    margin: 0;
+    margin: 0px;
+}
+#container {
+    width: 90%;
+    margin: auto; 
+
 }
 
 @font-face {
@@ -13,12 +18,14 @@ body {
     src: url(../fonts/thin-pencil-handwriting/Thin\ Pencil\ Handwriting.ttf);
 }
 
-div p {
+section p {
     font-size: 1em;
 }
 
-div img {
-    max-height: 600px;
+section img {
+    height: 200px;
+
+
 }
 .thin_pencil{
     font-family: thin-pencil-handwriting;
@@ -30,26 +37,103 @@ div img {
 }
 #myDIV {
     height: auto;
-    display: grid;
+    display: block;
     gap: 10px;
-   
     padding: 10px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
-  #myDIV div {
-    text-align: center;
+  #myDIV section {
     padding: 30px;
-    font-size: 20px;
+    font-size: 10px;
+    margin:0px;
+    
   }
 
   .Text_Background {
     background-color: white;
+    border-radius: 2%;
+    height:auto;
   }
 
 @media all and (min-width: 1024px) {
+    div p {
+        font-size: 1em;
+    }
+    
+    div img {
+        max-width: 400px;
+        height: auto;
+        
+        
+    
+    }
+    .thin_pencil{
+        font-family: thin-pencil-handwriting;
+    }
+    
+    .quotes {
+        font-family: thin-pencil-handwriting;
+        font-size: 10px;
+    }
+    #myDIV {
+        height: auto;
+        display: grid;
+        align-items: center;
+        gap: 10px;
+
+        padding: 10px;
+        grid-template-columns: auto auto;
+      }
+      #myDIV div {
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+      }
+    
+      .Text_Background {
+        background-color: white;
+        border-radius: 2%;
+        height:auto;
+      }
 
 }
 
 @media all and (min-width: 769px) {
+    div p {
+        font-size: 1em;
+    }
+    
+    div img {
+        max-width: 400px;
+        height: auto;
+        
+    
+    }
+    .thin_pencil{
+        font-family: thin-pencil-handwriting;
+    }
+    
+    .quotes {
+        font-family: thin-pencil-handwriting;
+        font-size: 10px;
+    }
+    #myDIV {
+        height: auto;
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        grid-template-columns: auto auto;
+      }
+      #myDIV div {
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
 
+      }
+    
+      .Text_Background {
+        background-color: white;
+        border-radius: 2%;
+    
+      }
 }
