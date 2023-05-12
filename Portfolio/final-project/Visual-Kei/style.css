@@ -5,12 +5,51 @@ body {
     margin: 0;
 }
 
-section {
-    display: grid; 
-    grid-template-columns:repeat(2, 1fr);
-    column-gap: 15px;
+@font-face {
+    font-family: "vtks-study";
+    src: url(../fonts/vtks-study/vtks_study.ttf);
+
+    font-family: "thin-pencil-handwriting";
+    src: url(../fonts/thin-pencil-handwriting/Thin\ Pencil\ Handwriting.ttf);
 }
 
-section p {
+div p {
+    font-size: 1em;
+}
+
+div img {
+    max-height: 600px;
+}
+.thin_pencil{
+    font-family: thin-pencil-handwriting;
+}
+
+.quotes {
+    font-family: thin-pencil-handwriting;
+    font-size: 10px;
+}
+#myDIV {
+    height: auto;
+    display: grid;
+    gap: 10px;
+   
+    padding: 10px;
+    grid-template-columns: auto auto;
+  }
+  #myDIV div {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .Text_Background {
     background-color: white;
+  }
+
+@media all and (min-width: 1024px) {
+
+}
+
+@media all and (min-width: 769px) {
+
 }
