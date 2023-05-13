@@ -65,26 +65,31 @@ nav img{
 
 #design-sketch {
     position: absolute;
+    top: -20px;
+    right: 170px;
+    /*
     transform: translate(163px, -70px);
+    */
 }
 #decora-kei {
-    max-height: 140px;
-    transform: translate(-55px, 80px);
+    max-height: 170px;
+    transform: translate(-65px, 110px);
+    
 }
 
 #mori-kei {
     max-height: 110px;
-    transform: translate(-70px, 30px);
+    transform: translate(-70px, 80px);
 }
 
 #Lolita {
     max-height: 80px;
-    transform: translate(-70px, -23px);
+    transform: translate(-70px, 25px);
 }
 
 #visual-kei {
     max-height: 40px;
-    transform: translate(-46px, -55px);
+    transform: translate(-46px, -3px);
 }
 
 @media all and (min-width: 769px) {
@@ -124,27 +129,28 @@ nav img{
 
      #design-sketch {
         position: absolute;
-        transform: translate(243px, -70px);
+        top: -60px;
+        right: 280px;
     }
     
     #decora-kei {
         max-height:230px;
-        transform: translate(-85px, 170px);
+        transform: translate(-85px, 190px);
     }
     
     #mori-kei {
         max-height: 160px;
-        transform: translate(-90px, 95px);
+        transform: translate(-90px, 105px);
     }
     
     #Lolita {
         max-height: 130px;
-        transform: translate(-100px, 3px);
+        transform: translate(-103px, 15px);
     }
     
     #visual-kei {
         max-height: 70px;
-        transform: translate(-70px, -50px);
+        transform: translate(-70px, -40px);
     }
 }
  
@@ -181,7 +187,8 @@ nav img{
     
     #design-sketch {
         position: absolute;
-        transform: translate(425px, -93px);
+        top: -90px;
+        right: 420px;
     }
 
     #decora-kei {

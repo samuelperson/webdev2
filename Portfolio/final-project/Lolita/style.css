@@ -11,13 +11,15 @@ body {
 }
 
 @font-face {
-    font-family: "vtks-study";
-    src: url(../fonts/vtks-study/vtks_study.ttf);
 
     font-family: "thin-pencil-handwriting";
     src: url(../fonts/thin-pencil-handwriting/Thin\ Pencil\ Handwriting.ttf);
 }
 
+@font-face {
+    font-family: "vtks-study";
+    src: url(../fonts/vtks-study/vtks_study.ttf); 
+}
 section p {
     font-size: 1em;
 }
@@ -27,6 +29,10 @@ section img {
 
 
 }
+#Title {
+    font-family: vtks-study;
+}
+
 .thin_pencil{
     font-family: thin-pencil-handwriting;
 }
